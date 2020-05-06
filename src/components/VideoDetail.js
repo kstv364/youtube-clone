@@ -1,11 +1,27 @@
 import React from "react";
-import { Paper, Typography } from "@material-ui/core";
+import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
+import {
+  Paper,
+  Typography,
+  CircularProgress,
+  Icon
+} from "@material-ui/core";
 export default ({ video }) => {
   if (!video)
     return (
       <React.Fragment>
-        <Paper elevation={6} style={{ padding: "2em" }}>
-          Loading....
+        <Paper
+          elevation={6}
+          style={{
+            padding: "2em",
+            textAlign: "center",
+            width: "100%"
+          }}
+        >
+          <YoutubeSearchedForIcon
+            style={{ fontSize: "150", color: "#303f9f" }}
+          />
+          <div style={{ }}>Search to see your favourite videos!!</div>
         </Paper>
       </React.Fragment>
     );
@@ -13,10 +29,10 @@ export default ({ video }) => {
   const videoSrc = `
   https://www.youtube.com/embed/${video.id.videoId}
   `;
-  
+
   return (
     <React.Fragment>
-      <Paper elevation={6} style={{ height: "70%" }}>
+      <Paper elevation={6} style={{ height: "25%" }}>
         <iframe
           frameBorder="0"
           height="100%"
