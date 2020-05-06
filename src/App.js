@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { Grid } from "@material-ui/core";
 import youtube from "./api/youtube";
 import {
