@@ -2,9 +2,7 @@ import React from "react";
 import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
 import {
   Paper,
-  Typography,
-  CircularProgress,
-  Icon
+  Typography
 } from "@material-ui/core";
 export default ({ video }) => {
   if (!video)
