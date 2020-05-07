@@ -1,7 +1,6 @@
 {
   "name": "searchtube",
   "version": "0.1.0",
-  "homepage": "https://kstv364.github.io/search-tube",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.13",
